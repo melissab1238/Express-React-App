@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import logo from "./logo.svg";
 import "./App.css";
+import { config } from "./Constants";
 
 class App extends Component {
     constructor(props) {
@@ -9,7 +10,8 @@ class App extends Component {
     }
 
     callAPI() {
-        fetch("http://localhost:9000/testAPI")
+        api_url = config.url.API_URL
+        fetch(api_url)
             .then(res => res.text())
             .then(res => this.setState({ apiResponse: res }))
             .catch(err => err);
