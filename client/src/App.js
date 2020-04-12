@@ -10,7 +10,7 @@ class App extends Component {
     }
 
     callAPI() {
-        api_url = config.url.API_URL
+        let api_url = config.url.API_URL
         fetch(api_url)
             .then(res => res.text())
             .then(res => this.setState({ apiResponse: res }))
