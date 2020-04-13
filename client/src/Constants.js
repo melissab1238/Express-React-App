@@ -9,5 +9,5 @@ const dev = {
       }
 }    
 
-export const config = process.env.NODE_ENV === "production" ? prod: dev;
-export const nodeenv = process.env.NODE_ENV;
+export const config = _ENVIRONMENT === "production" ? prod: dev;
+export const nodeenv = _ENVIRONMENT;
