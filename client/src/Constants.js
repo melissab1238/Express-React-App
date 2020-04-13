@@ -9,5 +9,5 @@ const dev = {
       }
 }    
 
-export const config = _ENVIRONMENT === "production" ? prod: dev;
+export const config = _ENVIRONMENT === "production_override" ? prod: dev;
 export const nodeenv = _ENVIRONMENT;
