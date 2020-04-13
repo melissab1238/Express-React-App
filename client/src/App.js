@@ -33,7 +33,7 @@ class App extends Component {
                     <h1 className="App-title">Welcome to React</h1>
                 </header>
                 <p className="App-intro">{this.state.apiResponse}</p>
-                <p className="App-intro">{process.env.
+                <p className="App-intro">{process.env.NODE_ENV}</p>
             </div>
         );
     }
