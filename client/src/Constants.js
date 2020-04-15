@@ -1,6 +1,6 @@
 const prod = {
     url: {
-        API_URL: "https://api-dot-wics-racist-twee-1583386228393.appspot.com/",
+        API_URL: "https://api-dot-wics-racist-twee-1583386228393.appspot.com/testAPI",
       }
 }
 const dev = {

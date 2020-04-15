@@ -11,9 +11,6 @@ class App extends Component {
 
     callAPI() {
         let api_url = config.url.API_URL
-        console.log(api_url)
-        console.log(process.env.NODE_ENV)
-        console.log(nodeenv)
         
         fetch(api_url)
             .then(res => res.text())
