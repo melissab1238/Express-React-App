@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import logo from "./logo.svg";
+import logo from "./logo.png";
 import "./App.css";
 import { config, nodeenv } from "./Constants";
 
@@ -27,10 +27,10 @@ class App extends Component {
             <div className="App">
                 <header className="App-header">
                     <img src={logo} className="App-logo" alt="logo" />
-                    <h1 className="App-title">Welcome to Marias Awesome React App (its so cool)</h1>
+                    <h1 className="App-title">Covid-19 Tweet Analysis</h1>
+                     <button>Heat Map</button>
+                     <button>Timeline</button>
                 </header>
-                <p className="App-intro">{this.state.apiResponse}</p>
-                <p className="App-intro">{process.env.NODE_ENV}</p>
             </div>
         );
     }
