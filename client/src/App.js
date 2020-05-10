@@ -2,6 +2,8 @@ import React, { Component } from "react";
 import logo from "./logo.png";
 import "./App.css";
 import { config, nodeenv } from "./Constants";
+import { makeStyles } from '@material-ui/core/styles';
+import CenteredTabs from './Tabs.js';
 
 class App extends Component {
     constructor(props) {
@@ -28,12 +30,12 @@ class App extends Component {
                 <header className="App-header">
                     <img src={logo} className="App-logo" alt="logo" />
                     <h1 className="App-title">Covid-19 Tweet Analysis</h1>
-                     <button>Heat Map</button>
-                     <button>Timeline</button>
                 </header>
+                <CenteredTabs/>
             </div>
         );
     }
+
 }
 
 export default App;
